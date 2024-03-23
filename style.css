@@ -1,0 +1,102 @@
+
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    background-color: lightskyblue;
+}
+
+.text-container{
+    width: 90vw;
+    height: 15vh;
+    background-color: lightgray;
+    box-shadow:  0 0 20px 2px gray;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction: column-reverse;
+    overflow-y: scroll;
+    outline: none;
+
+}
+
+.keyboard{
+    height: 50vh;
+    width: 70vw;
+    background-color: lightseagreen;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+}
+
+.secondLast{
+    width: 60%;
+    margin: 0 auto;
+}
+
+.space{
+    width: 50%;
+    height: 2rem;
+    background-color: rgb(23, 130, 124);
+}
+
+.capsLock{
+    border: 2px black solid;
+}
+.enter{
+    border: 2px black solid;
+}
+
+.key{
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.key:active{
+    background: white;
+}
+
+.active{
+    background-color: whitesmoke;
+}
+
+/* Media query*/
+@media screen and (max-width: 768px) {
+    .keyboard {
+        width: 90vw; 
+    }
+
+    .row {
+        flex-wrap: wrap; 
+    }
+
+    .key {
+        width: 20%; 
+        margin: 0.5rem; 
+    }
+
+    .space {
+        width: 40%; 
+    }
+}
